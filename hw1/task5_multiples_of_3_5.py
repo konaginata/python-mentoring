@@ -1,3 +1,6 @@
+number = 100000000
+
+
 def calculate_triangular_sum(limit, diff):
     num_terms = limit // diff
     return diff * (num_terms * (num_terms + 1) // 2)
@@ -11,7 +14,7 @@ def sum_multiples_of_3_or_5(limit):
     return sum_multiples_of_3 + sum_multiples_of_5 - sum_multiples_of_15
 
 
-print(sum_multiples_of_3_or_5(100000000))
+print(sum_multiples_of_3_or_5(number))
 
 
 # calculation check - slow:
@@ -23,4 +26,4 @@ def checking_calculation(limit):
     return total
 
 
-assert sum_multiples_of_3_or_5(100000000) == checking_calculation(100000000)
+assert sum_multiples_of_3_or_5(number) == checking_calculation(number)
