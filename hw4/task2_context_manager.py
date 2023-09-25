@@ -14,7 +14,8 @@ class timer:
         print(f"timer: block '{self.block_name}' executed in {elapsed_time:.3f} sec")
 
 
-with timer('doing some sleeps'):
-    sleep(1)
-    sleep(2)
-    sleep(3)
+if __name__ == '__main__':
+    with timer('doing some sleeps'):
+        sleep(1)
+        sleep(2)
+        sleep(3)
